@@ -1,0 +1,129 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyN0rRCq1bPW4CHlcewwkaVJ",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/luisosmx/Udemy_python/blob/main/Bucle_for\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "id": "-2DIqc5WxsP9"
+      },
+      "outputs": [],
+      "source": [
+        "lista = [\n",
+        "    \"Esto es un texto\",\n",
+        "    (1,5,10,15,20,25),\n",
+        "    [\"Azul\", \"Verde\", \"Amarillo\"]\n",
+        "]"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for coleccion in lista:\n",
+        "  print(coleccion)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3SBCET4myLd0",
+        "outputId": "6f65387c-9c94-4ed3-bbce-3dc8349a0660"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Esto es un texto\n",
+            "(1, 5, 10, 15, 20, 25)\n",
+            "['Azul', 'Verde', 'Amarillo']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for coleccion in lista:\n",
+        "  for elemento in coleccion:\n",
+        "    print(coleccion, \"->\", elemento)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "c1iynIeoyTBu",
+        "outputId": "b597eec0-dd2c-4d25-8b80-80d8ccd96ec2"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Esto es un texto -> E\n",
+            "Esto es un texto -> s\n",
+            "Esto es un texto -> t\n",
+            "Esto es un texto -> o\n",
+            "Esto es un texto ->  \n",
+            "Esto es un texto -> e\n",
+            "Esto es un texto -> s\n",
+            "Esto es un texto ->  \n",
+            "Esto es un texto -> u\n",
+            "Esto es un texto -> n\n",
+            "Esto es un texto ->  \n",
+            "Esto es un texto -> t\n",
+            "Esto es un texto -> e\n",
+            "Esto es un texto -> x\n",
+            "Esto es un texto -> t\n",
+            "Esto es un texto -> o\n",
+            "(1, 5, 10, 15, 20, 25) -> 1\n",
+            "(1, 5, 10, 15, 20, 25) -> 5\n",
+            "(1, 5, 10, 15, 20, 25) -> 10\n",
+            "(1, 5, 10, 15, 20, 25) -> 15\n",
+            "(1, 5, 10, 15, 20, 25) -> 20\n",
+            "(1, 5, 10, 15, 20, 25) -> 25\n",
+            "['Azul', 'Verde', 'Amarillo'] -> Azul\n",
+            "['Azul', 'Verde', 'Amarillo'] -> Verde\n",
+            "['Azul', 'Verde', 'Amarillo'] -> Amarillo\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "wmfCSoXYyskD"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
